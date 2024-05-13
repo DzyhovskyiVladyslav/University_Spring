@@ -1,0 +1,4 @@
+CREATE TABLE IF NOT EXISTS listOfAnswers (
+  y INT NOT NULL
+  n INT NOT NULL
+);

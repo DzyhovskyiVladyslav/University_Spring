@@ -1,0 +1,13 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+  <title>Опитувач</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+  <div style="width: 500px; border: 1px solid black; background-color:LightGrey; margin: auto;">
+    <p>Ваші відповіді: Так - <span th:text="${y}"></span>, Ні - <span th:text="${n}"></span></p><hr>
+    <p>Відповіді у відсотках: Так - <span th:text="${yp}"></span>%, Ні - <span th:text="${np}"></span>%</p><hr>
+  </div>
+</body>
+</html>

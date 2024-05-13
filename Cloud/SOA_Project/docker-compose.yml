@@ -1,0 +1,15 @@
+version: '3'
+services:
+  compose-main:
+    image: "main-service_image"
+    build: main/
+    ports:
+      - "8080:8080"
+    depends_on:
+      - compose-calculate
+  compose-calculate:
+    container_name: calculate-service
+    image: "calculate-service_image"
+    build: calculate/
+    ports:
+      - "8081:8081"
